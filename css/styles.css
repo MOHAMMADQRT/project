@@ -37,7 +37,7 @@ body {
   border-radius: 20px;
   padding: 40px;
   overflow: hidden;
-
+ background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465FF1 100%), url("assets/1.png") center/cover no-repeat;
 
 }
 
@@ -363,6 +363,7 @@ input.invalid {
   border-color: #DC2626;
   background: #fef2f2;
 }
+
 
 
 
