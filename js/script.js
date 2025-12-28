@@ -99,22 +99,22 @@ function enableSubmitButton() {
 function handleSubmit(event) {
   event.preventDefault();
 
-  // گرفتن مقادیر از فیلدهای فرم
+  // 'گرفتن اصلاعات از فایل اصلییی'
   const username = document.getElementById('username').value;
   const fullName = document.getElementById('fullName').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  // چاپ مقادیر در کنسول
+  // چاپ تو کنسول
   console.log('Username:', username);
   console.log('Full Name:', fullName);
   console.log('Email:', email);
   console.log('Password:', password);
 
-  // Simulate form submission and success message
+
   document.getElementById('success-message').style.display = 'block';
 
-  // Reset the form (clear input fields and remove validation styles)
+
   document.getElementById('registration-form').reset();
 
   const inputs = document.querySelectorAll('input');
@@ -123,8 +123,7 @@ function handleSubmit(event) {
   });
 
   setTimeout(() => {
-    document.getElementById('success-message').style.display = 'none';
-  }, 3000); // Hide success message after 3 seconds
+    document.getElementById('success-message')}); // Hide success message after 3 seconds
 
   document.getElementById('submit-btn').disabled = true;
 
