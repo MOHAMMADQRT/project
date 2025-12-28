@@ -1,0 +1,364 @@
+/* =========================
+   Base
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  background-color: #F7F8FA;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   Left Panel
+========================= */
+.left-section {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 676px;
+  height: 960px;
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465FF1 100%), url("/assets/1.jpg") center/cover no-repeat;
+}
+
+/* Top texts */
+.left-top {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.left-title {
+  width: 454px;
+  height: 48px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 119%;
+  letter-spacing: 0;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.left-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Bottom texts */
+.left-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 120px;
+  text-align: center;
+}
+
+.left-heading {
+  width: 454px;
+  height: 48px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 119%;
+  letter-spacing: 0;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.left-desc {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+/* =========================
+   Right Form Box
+========================= */
+.form-container {
+  position: absolute;
+  top: 166.5px;
+  left: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Tabs */
+.button-container {
+  width: 358px;
+  height: 43px;
+  display: flex;
+  gap: 0;
+  padding: 4px;
+  border-radius: 8px;
+  background: #ECF0FF;
+}
+
+.signup-btn,
+.signin-btn {
+  flex: 1;
+  height: 35px;
+  border: 0;
+  border-radius: 8px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #465FF1;
+  color: #fff;
+}
+
+.signin-btn {
+  background: transparent;
+  color: rgba(38, 32, 59, 0.4);
+}
+
+/* Inputs */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #26203B;
+}
+
+input {
+  width: 358px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(70, 95, 241, 0.4);
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(38, 32, 59, 0.4);
+}
+
+input:focus {
+  border-color: #465FF1;
+}
+
+/* Errors */
+.error-message {
+  display: none;
+  font-size: 12px;
+  color: #DC2626;
+}
+
+/* Password helper text */
+.forget-pass {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+}
+.password-strength {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+}
+.name-email {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+}
+.characters {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+}
+.symbol {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+}
+
+/* Create Account button */
+#submit-btn {
+  width: 358px;
+  height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(70, 95, 241, 0.7);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+    Text
+========================= */
+.footer-text {
+  position: absolute;
+  top: 953px;
+  left: 985px;
+  width: 259px;
+  height: 24px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(38, 32, 59, 0.4);
+}
+
+.footer-text a {
+  color: #26203B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* =========================
+    Message
+========================= */
+.success-message {
+  color: #15803D;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+.brand{
+  display: flex;
+  align-items: center;   
+  gap: 10px;            
+}
+
+.brand__logo{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand__text{
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;     
+  font-size: 24px;      
+  color: #26203B;
+}
+
+.success-message {
+  color: #15803D;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for the Forgot Password link */
+.forget-pass {
+  text-align: right;
+  font-size: 12px;
+  color: #465FF1;
+  text-decoration: none;
+  margin-left: 10px;  
+}
+
+.forget-pass:hover {
+  text-decoration: underline;  
+}
+
+/* Form inputs */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #26203B;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(70, 95, 241, 0.4);
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(38, 32, 59, 0.4);
+}
+
+input:focus {
+  border-color: #465FF1;
+}
+
+/* Validation messages for password */
+.password-strength,
+.name-email,
+.characters,
+.symbol {
+  font-size: 12px;
+  color: rgba(38, 32, 59, 0.6);
+  margin-top: 4px;
+}
+
+.password-strength {
+  color: rgba(38, 32, 59, 0.4); /* Default color */
+}
+
+.password-strength.weak {
+  color: #DC2626;  
+}
+
+.password-strength.strong {
+  color: #15803D;  
+}
+
+
+.error-message {
+  color: #DC2626;
+  font-size: 12px;
+  display: none;
+}
+
+input.valid {
+  border-color: #15803D;
+  background: #f0fdf4;
+}
+
+
+input.invalid {
+  border-color: #DC2626;
+  background: #fef2f2;
+}

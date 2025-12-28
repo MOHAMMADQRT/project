@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت‌نام</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!--چپ  صفحهه-->
+        <div class="left-section">
+            <div class="left-top">
+                <h1 class="left-title">Welcome to SimpleFlow</h1>
+                <p class="left-subtitle">Your Gateway to Effortless Management.</p>
+            </div>
+            <div class="left-bottom">
+                <h3 class="left-heading">Seamless Collaboration</h3>
+                <p class="left-desc">Effortlessly work together with your team in real-time.</p>
+            </div>
+        </div>
+
+        <!--فرم (راست صفحه)-->
+        <div class="form-container">
+            <div class="brand">
+                <img class="brand__logo" src="assets/2.png" alt="SimpleFlow">
+                <span class="brand__text">SimpleFlow</span>
+            </div>
+            <div class="button-container">
+                <button class="signup-btn">Sign Up</button>
+                <button class="signin-btn">Sign In</button>
+            </div>
+
+            <form id="registration-form">
+                <!--نام کاربرییی-->
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <small class="error-message" id="username-error"></small>
+                </div><br>
+
+                <!--نام-->
+                <div class="input-container">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter Your Name" required>
+                    <small class="error-message" id="fullName-error"></small>
+                </div><br>
+
+                <!--ایمیل-->
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+
+                <!--عبور-->  
+                <div class="input-container">
+                    <label for="password">Password
+                        <a href="#">
+                            <div class="forget-pass">Forget Password?</div>
+                        </a>
+                    </label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <small class="error-message" id="password-error"></small>
+                    <div id="password-strength" class="password-strength">✔ Password Strength: Weak</div>
+                    <div id="name-email" class="name-email">✔ Cannot contain your name or email address</div>
+                    <div id="characters" class="characters">✔ At least 8 characters</div>
+                    <div id="symbol" class="symbol">✔ Contains a number or symbol</div> <br>
+                </div>
+
+                
+                <button type="submit" id="submit-btn" class="submit-btn" disabled>Create Account</button>
+                <div id="success-message" class="success-message" style="display: none;">Account Created Successfully!
+                </div>
+
+        </div>
+
+        
+        <p class="footer-text">By signing up to create an account I accept Company’s <a href="#">Terms of Use & Privacy
+                Policy</a></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
